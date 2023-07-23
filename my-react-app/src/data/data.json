@@ -1,0 +1,105 @@
+{
+    "actionparams": {},
+    "generalanalytics": {
+        "objectdetection": {}
+    },
+    "inferenceanalytics": {
+        "InferenceAnalytics": {
+            "aeroplane": 6,
+            "backpack": 6,
+            "banana": 12,
+            "bear": 12,
+            "bed": 18,
+            "bench": 6,
+            "bicycle": 36,
+            "bird": 836,
+            "boat": 6,
+            "book": 36,
+            "bottle": 24,
+            "bowl": 6,
+            "bus": 12,
+            "car": 18,
+            "cat": 6,
+            "cell phone": 216,
+            "chair": 3872,
+            "clock": 12,
+            "cow": 12,
+            "cup": 1,
+            "diningtable": 6,
+            "dog": 101,
+            "elephant": 18,
+            "fire hydrant": 12,
+            "frisbee": 10,
+            "giraffe": 36,
+            "handbag": 27,
+            "horse": 6,
+            "keyboard": 18,
+            "laptop": 68,
+            "microwave": 6,
+            "motorbike": 6,
+            "mouse": 18,
+            "parking meter": 24,
+            "person": 30740,
+            "refrigerator": 6,
+            "remote": 10,
+            "sheep": 6,
+            "skateboard": 14,
+            "snowboard": 14,
+            "sofa": 51,
+            "stop sign": 22,
+            "suitcase": 43,
+            "surfboard": 14,
+            "teddy bear": 51,
+            "traffic light": 6,
+            "train": 6,
+            "truck": 6,
+            "tvmonitor": 24,
+            "umbrella": 6,
+            "wine glass": 3,
+            "zebra": 6
+        },
+        "LastReceivedTimestamp": "2023-07-23T08:54:57Z",
+        "ObjectCount": 0,
+        "throttling": {
+            "errorcount": 529
+        }
+    },
+    "overall": {
+        "requests": 7426,
+        "responses": 7426,
+        "validationfailure": 0,
+        "validationsuccess": 0
+    },
+    "summary": {
+        "/api/v1/camera2": {
+            "POST": {
+                "requests": {
+                    "received": 7169
+                },
+                "responses": {
+                    "200": 7169
+                }
+            }
+        },
+        "/api/v1/react": {
+            "GET": {
+                "requests": {
+                    "received": 257
+                },
+                "responses": {
+                    "200": 257
+                }
+            }
+        }
+    },
+    "validation": {
+        "results": {}
+    },
+    "z.caststats": {
+        "maps": {
+            "index": {
+                "size": 0
+            }
+        }
+    }
+}

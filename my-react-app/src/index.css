@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* For container */
+.vertical-text-container {
+	display: flex;
+	flex-direction: column;
+}
+
+/* For each vertical text element */
+.vertical-text {
+	writing-mode: vertical-lr; /* vertical writing mode, lr stands for left-to-right */
+	text-orientation: upright; /* upright text orientation */
+	white-space: nowrap; /* prevent text wrapping */
+}
