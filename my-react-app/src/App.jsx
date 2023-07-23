@@ -56,7 +56,7 @@ const App = () => {
 
 		let subscribed = true;
 		const interval= setInterval(()=>{
-			console.log("started")
+			console.log("started1")
 			fetch('http://172.26.1.245/api/v1/react')
 			.then(function (response) {
 			return response.json();
@@ -73,12 +73,12 @@ const App = () => {
 			setneutralCount(extractedData.neutral);
 			setsurpriseCount(extractedData.surprise);
 			setpersonCount(extractedData.person);
-			setAgeData(extractedData.ageGroups);
+			setAgeData(extractedData.ageGrp);
 
 
 			});
 			
-		},30000);
+		},10000);
 	
 		return() => {
 			clearInterval(interval);
@@ -89,7 +89,7 @@ const App = () => {
 		useEffect(() => {
 		let subscribed = true;
 		const interval= setInterval(()=>{
-			console.log("started")
+			console.log("started2")
 			fetch('http://172.26.1.243/api/v1/react')
 			.then(function (response) {
 			return response.json();
@@ -106,10 +106,11 @@ const App = () => {
 			setneutralCount1(extractedData1.neutral);
 			setsurpriseCount1(extractedData1.surprise);
 			setpersonCount1(extractedData1.person);
-			setAgeData1(extractedData1.ageGroups);
+			setAgeData1(extractedData1.ageGrp);
+
 			});
 			
-		},30000);
+		},10000);
 	
 		return() => {
 			clearInterval(interval);
@@ -150,14 +151,14 @@ const App = () => {
 				<div className="mt-8 ">
 					<div className="flex items-center">
 						<div className="flex-1 ">
-							<CrowdDetection camera={"Booth 1"} males={maleCount+maleCount1} females={femaleCount+femaleCount1} />
+							<CrowdDetection camera={determineBooth(personCount, personCount1)} males={maleCount+maleCount1} females={femaleCount+femaleCount1} />
 						</div>
 					</div>
 					<div className="flex items-center">
 						<div className="w-1/2 h-full mt-8 mb-4">
 							<h1 className="text-2xl font-bold mb-8 text-white">Age Stats</h1>
 							<AgeStats
-								ageGroups={ageData}
+								ageGroups={ageData1}
 							/>
 						</div>
 						<div className="w-1/2 mt-8 mb-4">
