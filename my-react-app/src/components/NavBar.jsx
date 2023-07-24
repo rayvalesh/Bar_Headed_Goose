@@ -52,7 +52,10 @@ const Sidebar = () => {
 					</a>
 				</li>
 				<li>
-					<a href="#" className="flex items-center">
+					<a
+						href="https://github.com/rayvalesh/Bar_Headed_Goose"
+						className="flex items-center"
+					>
 						<FaPhone className="mr-3" />
 						<span className="text-lg">Calling Booth</span>
 					</a>
